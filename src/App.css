@@ -1,0 +1,207 @@
+html, body {
+  font-family: 'Gayathri', sans-serif;
+  background-color: #6B3A03;
+  height: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.header { 
+  font-family: 'Chilanka', cursive;
+  font-size: 40px; 
+  font-weight: bolder;
+  margin: 0px;
+  padding: 30px 0px;
+  background-color: #6B3A03;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1:hover {
+  color: #B8752A;
+  transition: .1s all;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  margin-top: 120px;
+}
+
+.sidebar {
+  list-style: none;
+  text-align: right;
+  flex: 0.3;
+  background-color: #B8752A;
+  padding-top: 30px;
+  border-right: 1px solid #0E516B;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding-bottom: 30px;
+}
+
+.sidebar button {
+  background: none;
+  border: 0px;
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid #6B3A03;
+  margin: 5px 0px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.sidebar button:hover {
+  background-color: #6B3A03;
+  color: white;
+  transition: .1s all;
+}
+
+.addFolder button {
+  margin-top: 50px;
+  background-color: #6B3A03;
+}
+
+.main {
+  flex: 1;
+  list-style: none;
+  background-color: #2A8FB8;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.main__note-item {
+  background-color: #0E516B;
+  padding: 30px;
+  margin-bottom: 13px;
+  color: #B8752A;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.main__note-item.detailed {
+  flex-direction: column;
+}
+
+.main__note-item a {
+  color: #B8752A;
+}
+
+.main__note-item:hover {
+  color: #6B3A03;
+  transition: .3s all;
+}
+
+.main__note-item button {
+  border: none;
+  background-color: inherit;
+  color: #6B3A03;
+  background-color: #2A8FB8;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 5%
+}
+
+.main__note-item button:hover {
+  background-color: #6B3A03;
+  color: #2A8FB8;
+  transition: .1s all;
+}
+
+.main__note-item:hover, .main__note-item:hover a {
+  background-color: #54CFFF;
+  color: #6B3A03;
+}
+
+.leftSide {
+  flex: 1;
+}
+.itemName {
+  font-size: 30px;
+}
+
+.addNote button {
+  background-color: white;
+  color: #0E516B;
+  height: 60px;
+  border-radius: 50%;
+  width: 60px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border: 2px solid #2A8FB8;
+}
+
+.addNote button:hover {
+  background-color: #54CFFF;
+  border: 2px solid white;
+}
+
+
+
+/* add note */
+
+.add-note, .add-folder {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  color: #6B3A03;
+}
+
+.add-note *, .add-folder * {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-note input, .add-note textarea, .add-note select, .add-folder input, .add-folder textarea, .add-folder select {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.noteDescription {
+  text-align: left;
+}
+
+.add-note button, .add-folder button {
+  border: none;
+  background-color: inherit;
+  color: #6B3A03;
+  background-color: #54CFFF;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 5%;
+  border: 1px solid #6B3A03;
+  margin: 0px 10px;
+}
+
+.add-note button:hover, .add-folder button:hover {
+  background-color: #0E516B;
+  color: #B8752A;
+  transition: .3s all;
+}
